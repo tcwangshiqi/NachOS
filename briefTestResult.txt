@@ -1,0 +1,23 @@
+tests summary: ok:0
+*** Thread 2 looped 0 times
+*** Thread 2 looped 1 times
+*** Thread 0 looped 0 times
+*** Thread 0 looped 1 times
+*** Thread 3 looped 0 times
+*** Thread 3 looped 1 times
+*** Thread 1 looped 0 times
+*** Thread 1 looped 1 times
+*** Thread 2 looped 2 times
+*** Thread 2 looped 3 times
+*** Thread 0 looped 2 times
+*** Thread 0 looped 3 times
+*** Thread 3 looped 2 times
+*** Thread 3 looped 3 times
+*** Thread 1 looped 2 times
+*** Thread 1 looped 3 times
+*** Thread 2 looped 4 times
+*** Thread 0 looped 4 times
+*** Thread 3 looped 4 times
+*** Thread 1 looped 4 times
+Thread Done!!!
+Machine Halting....

@@ -1,0 +1,364 @@
+tests summary: ok:0
+postal worker is forked
+
+
+-----call back  10-----
+
+The current is main  TimeSlice:30  Priority:10
+Thread1 is forked
+
+
+-----call back  20-----
+
+The current is main  TimeSlice:20  Priority:10
+Thread2 is forked
+
+
+-----call back  30-----
+
+The current is main  TimeSlice:10  Priority:10
+main's priority is20
+
+find the next to run:
+postal worker's priority is 10
+Thread1's priority is 25
+Thread2's priority is 18
+main's priority is 20
+
+*** So run postal worker, its priority is 10
+
+postal worker is begun
+
+-----call back  40-----
+
+The current is postal worker  TimeSlice:30  Priority:10
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 18
+main's priority is 18
+
+*** So run Thread2, its priority is 18
+
+postal worker is slept
+Thread2 is begun
+
+-----call back  50-----
+
+The current is Thread2  TimeSlice:30  Priority:18
+*** Thread 2 looped 0 times
+
+-----call back  60-----
+
+The current is Thread2  TimeSlice:20  Priority:18
+*** Thread 2 looped 1 times
+
+-----call back  70-----
+
+The current is Thread2  TimeSlice:10  Priority:18
+Thread2's priority is28
+
+find the next to run:
+Thread1's priority is 25
+main's priority is 18
+Thread2's priority is 28
+
+*** So run main, its priority is 18
+
+
+-----call back  80-----
+
+The current is main  TimeSlice:30  Priority:18
+Thread3 is forked
+
+Thread3 is begun
+
+-----call back  90-----
+
+The current is Thread3  TimeSlice:30  Priority:5
+*** Thread 3 looped 0 times
+
+-----call back  100-----
+
+The current is Thread3  TimeSlice:20  Priority:5
+*** Thread 3 looped 1 times
+
+-----call back  110-----
+
+The current is Thread3  TimeSlice:10  Priority:5
+Thread3's priority is15
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 26
+main's priority is 18
+Thread3's priority is 15
+
+*** So run Thread3, its priority is 15
+
+
+-----call back  120-----
+
+The current is Thread3  TimeSlice:30  Priority:15
+*** Thread 3 looped 2 times
+
+-----call back  130-----
+
+The current is Thread3  TimeSlice:20  Priority:15
+*** Thread 3 looped 3 times
+
+-----call back  140-----
+
+The current is Thread3  TimeSlice:10  Priority:15
+Thread3's priority is25
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 26
+main's priority is 18
+Thread3's priority is 25
+
+*** So run main, its priority is 18
+
+
+-----call back  150-----
+
+The current is main  TimeSlice:20  Priority:18
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 26
+Thread3's priority is 23
+main's priority is 18
+
+*** So run main, its priority is 18
+
+
+-----call back  160-----
+
+The current is main  TimeSlice:30  Priority:18
+*** Thread 0 looped 0 times
+
+-----call back  170-----
+
+The current is main  TimeSlice:20  Priority:18
+*** Thread 0 looped 1 times
+
+-----call back  180-----
+
+The current is main  TimeSlice:10  Priority:18
+main's priority is28
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 26
+Thread3's priority is 23
+main's priority is 28
+
+*** So run Thread3, its priority is 23
+
+
+-----call back  190-----
+
+The current is Thread3  TimeSlice:30  Priority:23
+*** Thread 3 looped 4 times
+
+-----call back  200-----
+
+The current is Thread3  TimeSlice:20  Priority:23
+Thread3 is finished
+
+find the next to run:
+Thread1's priority is 25
+Thread2's priority is 26
+main's priority is 26
+
+*** So run Thread1, its priority is 25
+
+Thread3 is slept
+Thread1 is begun
+
+-----call back  210-----
+
+The current is Thread1  TimeSlice:30  Priority:25
+*** Thread 1 looped 0 times
+
+-----call back  220-----
+
+The current is Thread1  TimeSlice:20  Priority:25
+*** Thread 1 looped 1 times
+
+-----call back  230-----
+
+The current is Thread1  TimeSlice:10  Priority:25
+Thread1's priority is35
+
+find the next to run:
+Thread2's priority is 26
+main's priority is 26
+Thread1's priority is 35
+
+*** So run Thread2, its priority is 26
+
+
+-----call back  240-----
+
+The current is Thread2  TimeSlice:30  Priority:26
+*** Thread 2 looped 2 times
+
+-----call back  250-----
+
+The current is Thread2  TimeSlice:20  Priority:26
+*** Thread 2 looped 3 times
+
+-----call back  260-----
+
+The current is Thread2  TimeSlice:10  Priority:26
+Thread2's priority is36
+
+find the next to run:
+main's priority is 26
+Thread1's priority is 33
+Thread2's priority is 36
+
+*** So run main, its priority is 26
+
+
+-----call back  270-----
+
+The current is main  TimeSlice:30  Priority:26
+*** Thread 0 looped 2 times
+
+-----call back  280-----
+
+The current is main  TimeSlice:20  Priority:26
+*** Thread 0 looped 3 times
+
+-----call back  290-----
+
+The current is main  TimeSlice:10  Priority:26
+main's priority is36
+
+find the next to run:
+Thread1's priority is 33
+Thread2's priority is 34
+main's priority is 36
+
+*** So run Thread1, its priority is 33
+
+
+-----call back  300-----
+
+The current is Thread1  TimeSlice:30  Priority:33
+*** Thread 1 looped 2 times
+
+-----call back  310-----
+
+The current is Thread1  TimeSlice:20  Priority:33
+*** Thread 1 looped 3 times
+
+-----call back  320-----
+
+The current is Thread1  TimeSlice:10  Priority:33
+Thread1's priority is43
+
+find the next to run:
+Thread2's priority is 34
+main's priority is 34
+Thread1's priority is 43
+
+*** So run Thread2, its priority is 34
+
+
+-----call back  330-----
+
+The current is Thread2  TimeSlice:30  Priority:34
+*** Thread 2 looped 4 times
+
+-----call back  340-----
+
+The current is Thread2  TimeSlice:20  Priority:34
+Thread2 is finished
+
+find the next to run:
+main's priority is 34
+Thread1's priority is 41
+
+*** So run main, its priority is 34
+
+Thread2 is slept
+
+-----call back  350-----
+
+The current is main  TimeSlice:30  Priority:34
+*** Thread 0 looped 4 times
+
+-----call back  360-----
+
+The current is main  TimeSlice:20  Priority:34
+ping is forked
+
+ping is begun
+
+-----call back  370-----
+
+The current is ping  TimeSlice:30  Priority:10
+
+find the next to run:
+Thread1's priority is 41
+main's priority is 34
+
+*** So run main, its priority is 34
+
+ping is slept
+
+-----call back  380-----
+
+The current is main  TimeSlice:10  Priority:34
+main's priority is44
+
+find the next to run:
+Thread1's priority is 41
+main's priority is 44
+
+*** So run Thread1, its priority is 41
+
+
+-----call back  390-----
+
+The current is Thread1  TimeSlice:30  Priority:41
+*** Thread 1 looped 4 times
+
+-----call back  400-----
+
+The current is Thread1  TimeSlice:20  Priority:41
+Thread1 is finished
+
+find the next to run:
+main's priority is 42
+
+*** So run main, its priority is 42
+
+Thread1 is slept
+
+-----call back  410-----
+
+The current is main  TimeSlice:30  Priority:42
+
+find the next to run:
+main's priority is 42
+
+*** So run main, its priority is 42
+
+ping is slept
+
+-----call back  420-----
+
+The current is main  TimeSlice:20  Priority:42
+
+-----call back  430-----
+
+The current is main  TimeSlice:10  Priority:42
+Thread Done!!!
+Machine Halting....
+tcwangshiqi@tcwangshiqi-10:~/обть/NachOS-4.1/code/build.linux$ 
